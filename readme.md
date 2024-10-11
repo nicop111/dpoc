@@ -1,5 +1,3 @@
-# Programming Exercises for Dynamic Programming and Optimal Control Class AS24 at ETHZ
-
 Exercises in python, jupyter notebook
 
 ### Content
