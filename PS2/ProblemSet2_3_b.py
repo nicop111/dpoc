@@ -178,5 +178,7 @@ for pF in (0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 
     #    print(f"{state} {optimal_serve.get(state, None)} | Winning Probabibility: {value.get(state, 0)}")
 
 print(prob_win)
-#plt.plot(list(prob_win.keys()), list(prob_win.values()))
-#plt.show()
+plt.plot(list(prob_win.keys()), list(prob_win.values()), marker='o', linestyle='-')
+plt.xlabel('pF')
+plt.ylabel('Winning Probability')
+plt.savefig('3b.png')
