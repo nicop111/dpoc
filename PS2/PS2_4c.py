@@ -22,14 +22,14 @@ while np.abs(J1 - J1_old) > 1e-6 or np.abs(J2 - J2_old) > 1e-6:
 
 #Evaluate optimal actions
 if (4+alpha*(4/5*J1+1/5*J2)) > (6+alpha*(1/2*J1+1/2*J2)):
-    my1 = "research"
+    my1 = "advertise"
 else:
-    my1 = "dont research"
+    my1 = "dont advertise"
 
 if (-5+alpha*(7/10*J1+3/10*J2)) > (-3+alpha*(2/5*J1+3/5*J2)):
-    my2 = "advertise"
+    my2 = "research"
 else:
-    my2 = "dont advertise"
+    my2 = "dont research"
 
 print("Value iteration converged after " + str(it) + " iterations.")
 print("J1 = ", J1)
